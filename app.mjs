@@ -16,7 +16,7 @@ const io = new Server(server, {
 });
 
 app.use('/', function (req, res) {
-    res
+    res.send('ok');
 })
 
 server.listen(443, () => {
