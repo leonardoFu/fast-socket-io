@@ -4,7 +4,6 @@ import cors from 'cors';
 import  { Server } from 'socket.io';
 import { setupSocketIO } from './socketio.mjs';
 const app = express();
-app.use(cors());
 
 const server = http.createServer(app);
 setupSocketIO(server);
