@@ -17,7 +17,4 @@ const io = new Server(server, {
 app.use('/', function (req, res) {
     res.send('ok');
 })
-
-server.listen(443, () => {
-    console.log('listening on *:3000');
-});
+server.listen(8080, '0.0.0.0');
